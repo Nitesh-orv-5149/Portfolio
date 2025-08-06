@@ -1,4 +1,5 @@
 import { User } from "lucide-react";
+import Image from "next/image";
 
 export default function HeroSection() {
     return (
@@ -18,9 +19,9 @@ export default function HeroSection() {
                     lorem ipsum lorem ipsum lorem ipsum<br/>
                 </p>
             </section>
-            <section className="h-80 w-70 rounded-3xl bg-gray-500 flex justify-center items-center hover:rotate-12 hover:scale-105 hover:-translate-y-10 transition-all">
-                <div className="h-70 w-60 rounded-xl bg-cyan-950 flex justify-center items-center">
-                  <User className="h-50 w-50"/>
+            <section className="h-85 w-60 rounded-3xl bg-cyan-900 flex justify-center items-center hover:rotate-12 hover:scale-170 hover:-translate-x-30 transition-all">
+                <div className=" rounded-xl flex justify-center items-center">
+                  <Image className="rounded-2xl" src={'/nitesh.JPG'} alt="logo" width={200} height={200}/>
                 </div>
             </section>
         </header>
